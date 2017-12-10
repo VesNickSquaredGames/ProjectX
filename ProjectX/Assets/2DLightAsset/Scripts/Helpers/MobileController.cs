@@ -30,8 +30,8 @@ public class MobileController : MonoBehaviour {
 				//If so, set touchOrigin to the position of that touch
 				touchOrigin = myTouch.position;
 				Vector3 pos = cLight.transform.position;
-				horizontal = x > 0 ? 1 : -1;
-				vertical = y > 0 ? 1 : -1;
+				//horizontal = x > 0 ? 1 : -1;
+				//vertical = y > 0 ? 1 : -1;
 				pos.x += horizontal * 30f * Time.deltaTime;
 				pos.y += vertical * 30f * Time.deltaTime;
 			}
