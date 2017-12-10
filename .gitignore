@@ -12,7 +12,6 @@ ProjectX/.vs/
 ProjectX/ExportedObj/
 ProjectX/.consulo/
 *.csproj
-*.unityproj
 *.sln
 *.suo
 *.tmp
