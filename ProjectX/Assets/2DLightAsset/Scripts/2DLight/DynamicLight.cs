@@ -177,7 +177,7 @@ namespace DynamicLight2D
 							v.endpoint = true;
 						}
 						
-						Debug.DrawLine(transform.position, v.pos, Color.white);	
+						//Debug.DrawLine(transform.position, v.pos, Color.white);	
 						
 						//--Convert To local space for build mesh (mesh craft only in local vertex)
 						v.pos = transform.InverseTransformPoint(v.pos); 
@@ -312,7 +312,7 @@ namespace DynamicLight2D
 								hitp = (Vector2)transform.TransformPoint( dir.normalized * mag);
 							}
 							
-							Debug.DrawLine(fromCast, hitp, Color.green);	
+							//Debug.DrawLine(fromCast, hitp, Color.green);	
 							
 							verts vL = new verts();
 							vL.pos = transform.InverseTransformPoint(hitp);
@@ -487,11 +487,11 @@ namespace DynamicLight2D
 			{
 				if (i < (allVertices.Count -1))
 				{
-					Debug.DrawLine(allVertices [i].pos , allVertices [i+1].pos, new Color(i*0.02f, i*0.02f, i*0.02f));
+					///Debug.DrawLine(allVertices [i].pos , allVertices [i+1].pos, new Color(i*0.02f, i*0.02f, i*0.02f));
 				}
 				else
 				{
-					Debug.DrawLine(allVertices [i].pos , allVertices [0].pos, new Color(i*0.02f, i*0.02f, i*0.02f));
+					///Debug.DrawLine(allVertices [i].pos , allVertices [0].pos, new Color(i*0.02f, i*0.02f, i*0.02f));
 				}
 			}
 		}
